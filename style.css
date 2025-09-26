@@ -1,11 +1,11 @@
 body {
-  background-color: rgba(19, 145, 82, 0.895);
+  background-color: rgba(64, 224, 208, 1);
 }
 h1 {
   color: rgb(18, 18, 20);
 }
 p {
-  color: rgba(214, 228, 214, 0.799);
+  color: rgba(8, 31, 8, 0.93);
 }
 div {
   color:rgba(64, 4, 4, 0.818)
@@ -16,25 +16,6 @@ table, th, td {
   border-style: solid
 }
 th, td{
-  background-color: #cdf4f4c7;
+  background-color: #f6fcfc;
 }
-.nav_bar {
-  background-color: #c70a0a;
-  overflow: hidden;
-}
-.nav_bar a {
-  float: left;
-  color: #3a0321;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-.nav_bar a:hover {
-  background-color: #e7d5d5;
-  color: rgb(125, 159, 126);
-}
-.nav_bar a.active {
-  background-color: #06d086;
-  color: rgb(150, 15, 15);
-}
+

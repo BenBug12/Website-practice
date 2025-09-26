@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>My Collection of Websites</h1>
+        <p id="current-day"></p>  <!-- This paragraph will display the current day of the week -->
+        <p id="current-date"></p>  <!-- This paragraph will display the current date -->
+        <p id="clock"></p>  <!-- This paragraph will display the current time -->
+        <h2>Most used websites</h2>
+        <table>         <!-- This is a table for my most used websites -->
+            <tr>
+                <th>
+                    <a href="https://my.utrgv.edu/web/myutrgv/home">My UTRGV</a>
+                </th>
+                <th>
+                    <a href="https://www.google.com/">Google</a>
+                </th>
+                <th>
+                    <a href="https://www.gmail.com/">Gmail</a>
+                </th>
+                <th>
+                    <a href="https://github.com/">Git Hub</a>
+                </th>
+            </tr>
+        </table>
+        <h2>Websites for reference or software</h2>
+        <table>     <!-- This is a table for websites I use for reference or software -->
+            <tr>
+                <th>
+                    <a href="https://www.w3schools.com/">w3schools</a>
+                </th>
+                <th>
+                    <a href="https://www.codecademy.com/">Codecademy</a>
+                </th>
+                <th>
+                    <a href="https://getbootstrap.com/">Bootstrap</a>
+                </th>
+                <th>
+                    <a href="https://www.utrgv.edu/accessibility/students/mysas/index.html">MySAS</a>
+                </th>
+                <th>
+                    <a href="https://www.coursera.org/">Coursera</a>
+                </th>
+                <th>
+                    <a href="https://tosdr.org/en/">Terms of Service; Didn't Read</a>
+                </th>
+                <th>
+                    <a href="https://faculty.utrgv.edu/robert.schweller/">Dr. Schweller's UTRGV Page</a>
+                </th>
+                <th>
+                    <a href="https://www.python.org/">Python</a>
+                </th>
+                <th>
+                    <a href="https://chatgpt.com/">ChatGPT</a>
+                </th>
+                <th>
+                    <a href="https://www.stackoverflow.com/">Stack Overflow</a>
+                </th>
+            </tr>
+        </table>
+        <h2>Entertainment</h2>
+        <table>        <!-- This is a table for entertainment websites -->  
+            <tr>
+                <th>
+                    <a href="https://www.youtube.com/">YouTube</a>
+                </th>
+            </tr>
+        </table>
+        <h2>Would like to check out</h2>
+        <table>     <!-- This is a table for websites I would like to check out -->
+            <tr>
+                <th>
+                    <a href="https://www.glarrymusic.com/">Glarry Music</a>
+                </th>
+                <th>
+                    <a href="https://www.autodraw.com/">Auto Draw</a>
+                </th>
+                <th>
+                    <a href="https://scratch.mit.edu/">Scratch</a>
+                </th>
+                <th>
+                    <a href="https://www.lucidchart.com/pages/landing?utm_source=google&utm_medium=cpc&utm_campaign=_chart_en_us_mixed_search_brand_exact_&km_CPC_CampaignId=1457964857&km_CPC_AdGroupID=57044764032&km_CPC_Keyword=lucidchart&km_CPC_MatchType=e&km_CPC_ExtensionID=&km_CPC_Network=g&km_CPC_AdPosition=&km_CPC_Creative=442433231228&km_CPC_TargetID=kwd-33511936169&km_CPC_Country=9028175&km_CPC_Device=c&km_CPC_placement=&km_CPC_target=&gad_source=1&gad_campaignid=1457964857&gbraid=0AAAAADLdSjAaQT9lbdwVACccEob1NRq91&gclid=Cj0KCQjw267GBhCSARIsAOjVJ4E16o3GjtHoyo_YRDghUDq8LVxMjflK0RQYgXXW1o3OwJ1cftE_PkYaAtf_EALw_wcB">Lucidchart</a>
+                </th>
+            </tr>
+        </table>
+        <script>
+            const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            const today = new Date();
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            document.getElementById("current-date").textContent = today.toLocaleDateString(undefined, options);
+            document.getElementById("current-day").textContent = "Today is " + days[today.getDay()];
+            function updateClock() {
+                const now = new Date();
+                const timeString = now.toLocaleTimeString();
+                document.getElementById("clock").textContent = timeString;
+            }
+            setInterval(updateClock, 1000);
+            updateClock(); // initial call
+        </script>
+    </body>
+</html>
